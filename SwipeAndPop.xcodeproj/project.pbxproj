@@ -7,27 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E39B4ED2AA3A633E5FB0A87 /* Pods_SwipeAndPop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75648D23CB72F4DE8324F30 /* Pods_SwipeAndPop.framework */; };
 		95378B991F82BD4600B138B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95378B981F82BD4600B138B1 /* AppDelegate.swift */; };
-		95378B9B1F82BD4600B138B1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 95378B9A1F82BD4600B138B1 /* GameScene.sks */; };
-		95378B9D1F82BD4600B138B1 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 95378B9C1F82BD4600B138B1 /* Actions.sks */; };
 		95378B9F1F82BD4600B138B1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95378B9E1F82BD4600B138B1 /* GameScene.swift */; };
 		95378BA11F82BD4600B138B1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95378BA01F82BD4600B138B1 /* GameViewController.swift */; };
 		95378BA41F82BD4600B138B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95378BA21F82BD4600B138B1 /* Main.storyboard */; };
 		95378BA61F82BD4600B138B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95378BA51F82BD4600B138B1 /* Assets.xcassets */; };
 		95378BA91F82BD4600B138B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95378BA71F82BD4600B138B1 /* LaunchScreen.storyboard */; };
+		95378BB31F82D00A00B138B1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95378BB21F82D00A00B138B1 /* Character.swift */; };
+		954D64D41FA05FE00039F136 /* UserScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D64D31FA05FE00039F136 /* UserScoreData.swift */; };
+		955EC85A1F8769F100911104 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955EC8591F8769F100911104 /* Chain.swift */; };
+		95628B981F98D27F0071A801 /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 95628B971F98D27F0071A801 /* Level_5.json */; };
+		95628B9A1F99DE8B0071A801 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628B991F99DE8B0071A801 /* SettingViewController.swift */; };
+		95628B9C1F9A74D60071A801 /* DataGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628B9B1F9A74D60071A801 /* DataGame.swift */; };
+		9569BB9E1FAF4F1B001543A2 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569BB9D1FAF4F1B001543A2 /* Tile.swift */; };
+		959F75E31F92068A00AB84AD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959F75E21F92068A00AB84AD /* Login.swift */; };
+		95A0ECD61F92252100627570 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95A0ECD51F92251D00627570 /* GoogleService-Info.plist */; };
+		95D09F261F84E60F0000F0F5 /* Cc.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F251F84E48B0000F0F5 /* Cc.wav */; };
+		95D09F271F84E6120000F0F5 /* error.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F221F84E1EF0000F0F5 /* error.mp3 */; };
+		95D09F281F84E6140000F0F5 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F231F84E2B00000F0F5 /* coin.mp3 */; };
+		95D09F291F84E6170000F0F5 /* swap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F241F84E3720000F0F5 /* swap.mp3 */; };
+		95D09F301F84E6A20000F0F5 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2B1F84E69C0000F0F5 /* Chomp.wav */; };
+		95D09F311F84E6A40000F0F5 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2D1F84E69C0000F0F5 /* Drip.wav */; };
+		95D09F321F84E6A50000F0F5 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2A1F84E69C0000F0F5 /* Error.wav */; };
+		95D09F331F84E6A70000F0F5 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2C1F84E69C0000F0F5 /* Ka-Ching.wav */; };
+		95D09F341F84E6A90000F0F5 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2E1F84E69D0000F0F5 /* Mining by Moonlight.mp3 */; };
+		95D09F351F84E6AB0000F0F5 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 95D09F2F1F84E69D0000F0F5 /* Scrape.wav */; };
+		95DA526B1F9B42FB005CC81B /* Level_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 95DA526A1F9B42FB005CC81B /* Level_6.json */; };
+		95F087921F82D69E00EF3C65 /* ArrayGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F087911F82D69E00EF3C65 /* ArrayGrid.swift */; };
+		95F087941F82DA2B00EF3C65 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F087931F82DA2B00EF3C65 /* Level.swift */; };
+		95F0879E1F82E3FF00EF3C65 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F0879D1F82E3FF00EF3C65 /* Extension.swift */; };
+		95F087A11F836CCC00EF3C65 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 95F0879A1F82E2AE00EF3C65 /* Level_4.json */; };
+		95F087A21F836CD100EF3C65 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 95F087971F82E2AE00EF3C65 /* Level_1.json */; };
+		95F087A31F836CD500EF3C65 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 95F087961F82E2AE00EF3C65 /* Level_0.json */; };
+		95F087A41F836CDA00EF3C65 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 95F087981F82E2AE00EF3C65 /* Level_2.json */; };
+		95F087A51F836CDE00EF3C65 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 95F087991F82E2AE00EF3C65 /* Level_3.json */; };
+		95F087A71F838A1700EF3C65 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F087A61F838A1700EF3C65 /* Swap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FAD606BD713F3DF118EE6B5 /* Pods-SwipeAndPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeAndPop.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop.release.xcconfig"; sourceTree = "<group>"; };
 		95378B951F82BD4600B138B1 /* SwipeAndPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeAndPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95378B981F82BD4600B138B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95378B9A1F82BD4600B138B1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		95378B9C1F82BD4600B138B1 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		95378B9E1F82BD4600B138B1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		95378BA01F82BD4600B138B1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		95378BA31F82BD4600B138B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95378BA51F82BD4600B138B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95378BA81F82BD4600B138B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95378BAA1F82BD4600B138B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95378BB21F82D00A00B138B1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		954D64D31FA05FE00039F136 /* UserScoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScoreData.swift; sourceTree = "<group>"; };
+		955EC8591F8769F100911104 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		95628B971F98D27F0071A801 /* Level_5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
+		95628B991F99DE8B0071A801 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		95628B9B1F9A74D60071A801 /* DataGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGame.swift; sourceTree = "<group>"; };
+		9569BB9D1FAF4F1B001543A2 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = "../../../../Downloads/CookieCrunch - Sample Part 4 2/CookieCrunch/Tile.swift"; sourceTree = "<group>"; };
+		959F75E21F92068A00AB84AD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		95A0ECD41F9216B200627570 /* SwipeAndPop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwipeAndPop.entitlements; sourceTree = "<group>"; };
+		95A0ECD51F92251D00627570 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95D09F221F84E1EF0000F0F5 /* error.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = error.mp3; sourceTree = "<group>"; };
+		95D09F231F84E2B00000F0F5 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		95D09F241F84E3720000F0F5 /* swap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swap.mp3; sourceTree = "<group>"; };
+		95D09F251F84E48B0000F0F5 /* Cc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cc.wav; sourceTree = "<group>"; };
+		95D09F2A1F84E69C0000F0F5 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		95D09F2B1F84E69C0000F0F5 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		95D09F2C1F84E69C0000F0F5 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		95D09F2D1F84E69C0000F0F5 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		95D09F2E1F84E69D0000F0F5 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		95D09F2F1F84E69D0000F0F5 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		95DA526A1F9B42FB005CC81B /* Level_6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_6.json; sourceTree = "<group>"; };
+		95F087911F82D69E00EF3C65 /* ArrayGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayGrid.swift; sourceTree = "<group>"; };
+		95F087931F82DA2B00EF3C65 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		95F087961F82E2AE00EF3C65 /* Level_0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		95F087971F82E2AE00EF3C65 /* Level_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		95F087981F82E2AE00EF3C65 /* Level_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		95F087991F82E2AE00EF3C65 /* Level_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		95F0879A1F82E2AE00EF3C65 /* Level_4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		95F0879D1F82E3FF00EF3C65 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		95F087A61F838A1700EF3C65 /* Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		B75648D23CB72F4DE8324F30 /* Pods_SwipeAndPop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeAndPop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4D6713C7B2F011E2A0541F /* Pods-SwipeAndPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeAndPop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +94,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E39B4ED2AA3A633E5FB0A87 /* Pods_SwipeAndPop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DE99C9BFA5A404AFC4511DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75648D23CB72F4DE8324F30 /* Pods_SwipeAndPop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95378B8C1F82BD4600B138B1 = {
 			isa = PBXGroup;
 			children = (
 				95378B971F82BD4600B138B1 /* SwipeAndPop */,
 				95378B961F82BD4600B138B1 /* Products */,
+				C83AB0F5492935D5C658F4F6 /* Pods */,
+				4DE99C9BFA5A404AFC4511DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +130,70 @@
 		95378B971F82BD4600B138B1 /* SwipeAndPop */ = {
 			isa = PBXGroup;
 			children = (
+				95A0ECD41F9216B200627570 /* SwipeAndPop.entitlements */,
 				95378B981F82BD4600B138B1 /* AppDelegate.swift */,
-				95378B9A1F82BD4600B138B1 /* GameScene.sks */,
-				95378B9C1F82BD4600B138B1 /* Actions.sks */,
+				95F0879D1F82E3FF00EF3C65 /* Extension.swift */,
+				955EC8591F8769F100911104 /* Chain.swift */,
+				95F087A61F838A1700EF3C65 /* Swap.swift */,
 				95378B9E1F82BD4600B138B1 /* GameScene.swift */,
 				95378BA01F82BD4600B138B1 /* GameViewController.swift */,
+				9569BB9D1FAF4F1B001543A2 /* Tile.swift */,
+				95378BB21F82D00A00B138B1 /* Character.swift */,
+				95F087911F82D69E00EF3C65 /* ArrayGrid.swift */,
+				95F087931F82DA2B00EF3C65 /* Level.swift */,
 				95378BA21F82BD4600B138B1 /* Main.storyboard */,
 				95378BA51F82BD4600B138B1 /* Assets.xcassets */,
 				95378BA71F82BD4600B138B1 /* LaunchScreen.storyboard */,
 				95378BAA1F82BD4600B138B1 /* Info.plist */,
+				95A0ECD51F92251D00627570 /* GoogleService-Info.plist */,
+				955EC85B1F8774AD00911104 /* sound */,
+				95F087951F82E2AE00EF3C65 /* Levels */,
+				959F75E21F92068A00AB84AD /* Login.swift */,
+				95628B991F99DE8B0071A801 /* SettingViewController.swift */,
+				95628B9B1F9A74D60071A801 /* DataGame.swift */,
+				954D64D31FA05FE00039F136 /* UserScoreData.swift */,
 			);
 			path = SwipeAndPop;
+			sourceTree = "<group>";
+		};
+		955EC85B1F8774AD00911104 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				95D09F241F84E3720000F0F5 /* swap.mp3 */,
+				95D09F231F84E2B00000F0F5 /* coin.mp3 */,
+				95D09F221F84E1EF0000F0F5 /* error.mp3 */,
+				95D09F251F84E48B0000F0F5 /* Cc.wav */,
+				95D09F2B1F84E69C0000F0F5 /* Chomp.wav */,
+				95D09F2D1F84E69C0000F0F5 /* Drip.wav */,
+				95D09F2A1F84E69C0000F0F5 /* Error.wav */,
+				95D09F2C1F84E69C0000F0F5 /* Ka-Ching.wav */,
+				95D09F2E1F84E69D0000F0F5 /* Mining by Moonlight.mp3 */,
+				95D09F2F1F84E69D0000F0F5 /* Scrape.wav */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		95F087951F82E2AE00EF3C65 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				95F087961F82E2AE00EF3C65 /* Level_0.json */,
+				95F087971F82E2AE00EF3C65 /* Level_1.json */,
+				95F087981F82E2AE00EF3C65 /* Level_2.json */,
+				95F087991F82E2AE00EF3C65 /* Level_3.json */,
+				95F0879A1F82E2AE00EF3C65 /* Level_4.json */,
+				95628B971F98D27F0071A801 /* Level_5.json */,
+				95DA526A1F9B42FB005CC81B /* Level_6.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		C83AB0F5492935D5C658F4F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D6713C7B2F011E2A0541F /* Pods-SwipeAndPop.debug.xcconfig */,
+				5FAD606BD713F3DF118EE6B5 /* Pods-SwipeAndPop.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95378BAD1F82BD4600B138B1 /* Build configuration list for PBXNativeTarget "SwipeAndPop" */;
 			buildPhases = (
+				D518B66D6F01289FA443E92E /* [CP] Check Pods Manifest.lock */,
 				95378B911F82BD4600B138B1 /* Sources */,
 				95378B921F82BD4600B138B1 /* Frameworks */,
 				95378B931F82BD4600B138B1 /* Resources */,
+				283C3E1F66B80B7401A9B05C /* [CP] Embed Pods Frameworks */,
+				9C98DE540EE4782B366AFC90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +232,11 @@
 					95378B941F82BD4600B138B1 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -133,23 +264,125 @@
 			buildActionMask = 2147483647;
 			files = (
 				95378BA41F82BD4600B138B1 /* Main.storyboard in Resources */,
-				95378B9B1F82BD4600B138B1 /* GameScene.sks in Resources */,
+				95D09F311F84E6A40000F0F5 /* Drip.wav in Resources */,
+				95D09F271F84E6120000F0F5 /* error.mp3 in Resources */,
+				95D09F301F84E6A20000F0F5 /* Chomp.wav in Resources */,
+				95F087A51F836CDE00EF3C65 /* Level_3.json in Resources */,
+				95F087A11F836CCC00EF3C65 /* Level_4.json in Resources */,
+				95A0ECD61F92252100627570 /* GoogleService-Info.plist in Resources */,
 				95378BA61F82BD4600B138B1 /* Assets.xcassets in Resources */,
+				95D09F341F84E6A90000F0F5 /* Mining by Moonlight.mp3 in Resources */,
+				95D09F291F84E6170000F0F5 /* swap.mp3 in Resources */,
+				95F087A21F836CD100EF3C65 /* Level_1.json in Resources */,
+				95D09F321F84E6A50000F0F5 /* Error.wav in Resources */,
+				95D09F331F84E6A70000F0F5 /* Ka-Ching.wav in Resources */,
+				95F087A41F836CDA00EF3C65 /* Level_2.json in Resources */,
+				95D09F281F84E6140000F0F5 /* coin.mp3 in Resources */,
+				95D09F351F84E6AB0000F0F5 /* Scrape.wav in Resources */,
+				95628B981F98D27F0071A801 /* Level_5.json in Resources */,
+				95D09F261F84E60F0000F0F5 /* Cc.wav in Resources */,
 				95378BA91F82BD4600B138B1 /* LaunchScreen.storyboard in Resources */,
-				95378B9D1F82BD4600B138B1 /* Actions.sks in Resources */,
+				95DA526B1F9B42FB005CC81B /* Level_6.json in Resources */,
+				95F087A31F836CD500EF3C65 /* Level_0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		283C3E1F66B80B7401A9B05C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C98DE540EE4782B366AFC90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwipeAndPop/Pods-SwipeAndPop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D518B66D6F01289FA443E92E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwipeAndPop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95378B911F82BD4600B138B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F087941F82DA2B00EF3C65 /* Level.swift in Sources */,
+				954D64D41FA05FE00039F136 /* UserScoreData.swift in Sources */,
 				95378B9F1F82BD4600B138B1 /* GameScene.swift in Sources */,
+				9569BB9E1FAF4F1B001543A2 /* Tile.swift in Sources */,
 				95378BA11F82BD4600B138B1 /* GameViewController.swift in Sources */,
+				95F087921F82D69E00EF3C65 /* ArrayGrid.swift in Sources */,
+				955EC85A1F8769F100911104 /* Chain.swift in Sources */,
 				95378B991F82BD4600B138B1 /* AppDelegate.swift in Sources */,
+				95378BB31F82D00A00B138B1 /* Character.swift in Sources */,
+				95628B9C1F9A74D60071A801 /* DataGame.swift in Sources */,
+				95F0879E1F82E3FF00EF3C65 /* Extension.swift in Sources */,
+				959F75E31F92068A00AB84AD /* Login.swift in Sources */,
+				95F087A71F838A1700EF3C65 /* Swap.swift in Sources */,
+				95628B9A1F99DE8B0071A801 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +457,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +509,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -284,14 +519,20 @@
 		};
 		95378BAE1F82BD4600B138B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4D6713C7B2F011E2A0541F /* Pods-SwipeAndPop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwipeAndPop/SwipeAndPop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: asher.elgrassi@gmail.com (P566TA2NWV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R7NU24D59;
 				INFOPLIST_FILE = SwipeAndPop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Asher-Elgar.SwipeAndPop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +540,20 @@
 		};
 		95378BAF1F82BD4600B138B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAD606BD713F3DF118EE6B5 /* Pods-SwipeAndPop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwipeAndPop/SwipeAndPop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: asher.elgrassi@gmail.com (P566TA2NWV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6R7NU24D59;
 				INFOPLIST_FILE = SwipeAndPop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Asher-Elgar.SwipeAndPop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
